@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pingpong game</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="project.css">
+
+    </head>
+    <body>
+        <canvas class="pingpong">
+        <div class="user"></div>
+        <div class="com"></div>
+        </canvas>
+        <div class="manu-container">
+        <div class="manu">
+            <div class="manu-list">
+        <button onclick="start()" class="start">
+        Start</button>
+        <button class="setting" onclick="setting()">setting</button>
+    </div></div></div>
+   <!-- <div class="setting-container">
+        <div class="setting-list">
+            <button class="background-color">
+                background
+            </button>
+            <button class="level">
+                Level
+            </button>
+        </div>
+    </div>-->
+    <div class="play-again-container">
+
+    <div class="play-again">
+        <button class="play-again-button">play again</button>
+    </div></div>
+    <audio class="my" id="my"> 
+        <source  id="on-my-way"src="C:\Users\lenovo\Downloads\Alan Walker, Sabrina Carpenter & Farruko - On My Way.mp3" type="audio/mp3">
+        <!--<source id="faded" src="C:\Users\lenovo\Downloads\Alan-Walker-Faded.mp3" type="audio/mp3">-->
+     </audio>
+     
+     <div class="score-container">
+         <div class="score-result">
+             <div class="user-score">
+                 <div class="user-icon">
+                    <i class="fas fa-user"></i>
+                 </div>
+                 <div class="user-score-text">0</div>
+                 <div class="user-text">USER</div>
+             </div>
+             <div class="result">
+             <div class="score-result-text">
+                 YOU WIN
+             </div>
+             <div class="play-again-button">
+                 <button class="play-again" onclick="display()">Play Again</button>
+             </div>
+             </div>
+             <div class="com-score">
+                <div class="com-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="com-score-text">0</div>
+                <div class="com-text">COMPUTER</div>
+            </div>
+
+         </div>
+     </div>
+     <div class="setting-container2">
+<div class="setting-container">
+<div class="setting-option-list-container">
+    <div class="setting-option-list">
+        <button class="setting-button" onclick="backgroundopen()">Background color</button>
+        <button class="setting-button">Ball color</button>
+        <button class="setting-button" onclick="Username2()">User name </button>
+        <button class="setting-button" id="userimg">user-img</button>
+    </div>
+</div>
+</div></div>
+<div class="backgound-color-container">
+<div class="background-color-list">
+    
+</div>
+<div class="background-content">
+    <div class="background-color" onclick="canvascolor()" id="setcolor" style="background:black;"></div>
+</div>
+<input type="color"  class="background-color-input">
+<button onclick="back()" class="back"> Back</button>
+
+</div>
+<div class="user-name-container">
+    <div class="user-name-content">
+       <input class="user-new-name" type="text" value="USER"> 
+        <button class="user-name-button" onclick="setusername()"> Set Name</button>
+    </div>
+</div>
+<div class="user-img-container">
+    <div class="user-img-content">
+        <div class="user-icon">
+            <i class="fas fa-user"></i>
+         </div>
+         <button  class="chose-img" onclick="imageset()">Set image</button>
+    </div>
+</div>
+        <script src="project.js"></script>
+    </body>
+</html>
